@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.help{
+		display: none;
+		position: absolute;
+		top:50%;
+		left: 1%;
+	}
+		.dh1{
+		display: none;
+		position: absolute;
+		top: 45%;
+		left: 48%;
+		}
+	</style>
+</head>
+<body>
+<div style="background-color: red;height: 1000px;display: flex;">
+	<div class="help" style="">помоги мне</div>
+	<div class="dh1">ха-ха-ха</div>
+<div class="odnoclassnik1" style="background-color: yellow;height: 50px;width: 50px;margin-top: 350px;margin-left: 10px;"></div>
+<div class="igrok" style="background-color: green;height: 80px; width: 80px;margin-left: 150px;margin-top: 350px;"></div>
+<div class="hooligan2" style="background-color: blue;height: 100px;width: 100px;left: 450px;top: 200px;position: absolute;"></div>
+<div class="hooligan1" style="background-color: blue;height: 100px;width: 100px;left: 650px;top: 300px;position: absolute;"></div>
+<div class="hooligan3" style="background-color: blue;height: 100px;width: 100px;left: 900px;top: 200px;position: absolute;"></div>
+
+<div class="snejok1" style="background-color: white;height: 20px;width: 20px;position: absolute;transition: 2s;left: 130px;top: 420px;"></div>
+<div class="snejok2" style="background-color: white;height: 20px;width: 20px;position: absolute;transition: 2s;left: 120px;top:400px;"></div>
+<div class="snejok3" style="background-color: white;height: 20px;width: 20px;position: absolute;transition: 2s;left: 100px;top: 410px; "></div>
+<div class="snejok4" style="background-color: white;height: 20px;width: 20px;position: absolute;transition: 2s;left: 130px;top: 420px;"></div>
+<div class="snejok5" style="background-color: white;height: 20px;width: 20px;position: absolute;transition: 2s;left: 120px;top:400px;"></div>
+<div class="snejok6" style="background-color: white;height: 20px;width: 20px;position: absolute;transition: 2s;left: 100px;top: 410px; "></div>
+
+</div>
+<div style="background-color: orange;height: 1000px;">
+<div></div>	
+</div>
+<script>
+	let snejok1 = document.querySelector(".snejok1");
+	let snejok2 = document.querySelector(".snejok2");
+	let snejok3 = document.querySelector(".snejok3");
+	let snejok4 = document.querySelector(".snejok4");
+	let snejok5 = document.querySelector(".snejok5");
+	let snejok6 = document.querySelector(".snejok6");
+	let damage = 0;
+
+	let dh1 = document.querySelector(".dh1");
+	let hooligan1 = document.querySelector(".hooligan1");
+	let hooligan2 = document.querySelector(".hooligan2");
+	let hooligan3 = document.querySelector(".hooligan3");
+	let odnoclassnik1 = document.querySelector(".odnoclassnik1");
+	let help = document.querySelector(".help");
+	let showHelp = function(){
+			help.style.display = "block";
+	}
+
+	setTimeout(showHelp, 2000);
+	hooligan1.onclick = function(){
+			dh1.style.display = "block";
+	}
+	snejok1.onclick = function(){
+			snejok1.style.transition = "1s"
+			snejok1.style.top = "250px";
+			snejok1.style.left = "480px";
+			damage = damage + 1;
+			if (damage == 6){
+				hooligan1.style.top = "0px"
+				hooligan1.style.left = "0px"
+			}if (damage == 6){
+				hooligan2.style.top = "0px"
+				hooligan2.style.left = "0px"
+			}
+			if (damage == 6){
+				hooligan3.style.top = "0px"
+				hooligan3.style.left = "0px"
+			}
+			hooligan1.style.transition = "2s"
+			hooligan2.style.transition = "2s"
+			hooligan3.style.transition = "2s"
+			
+	}
+    snejok2.onclick = function(){
+    		snejok2.style.transition = "1s"
+			snejok2.style.top = "350px";
+			snejok2.style.left = "680px";
+			damage = damage + 1;
+			if (damage == 6){
+				hooligan1.style.top = "0px"
+				hooligan1.style.left = "0px"
+			}if (damage == 6){
+				hooligan2.style.top = "0px"
+				hooligan2.style.left = "0px"
+			}
+			if (damage == 6){
+				hooligan3.style.top = "0px"
+				hooligan3.style.left = "0px"
+			}
+			hooligan1.style.transition = "2s"
+			hooligan2.style.transition = "2s"
+			hooligan3.style.transition = "2s"
+
+	}
+	snejok3.onclick = function(){
+			snejok3.style.transition = "1s"
+			snejok3.style.top = "250px";
+			snejok3.style.left = "950px";
+			damage = damage + 1;
+			if (damage == 6){
+				hooligan1.style.top = "0px"
+				hooligan1.style.left = "0px"
+			}if (damage == 6){
+				hooligan2.style.top = "0px"
+				hooligan2.style.left = "0px"
+			}
+			if (damage == 6){
+				hooligan3.style.top = "0px"
+				hooligan3.style.left = "0px"
+			}
+			hooligan1.style.transition = "2s"
+			hooligan2.style.transition = "2s"
+			hooligan3.style.transition = "2s"
+	}
+	snejok4.onclick = function(){
+			snejok4.style.transition = "1s"
+			snejok4.style.top = "250px";
+			snejok4.style.left = "480px";
+			damage = damage + 1;
+			if (damage == 6){
+				hooligan1.style.top = "0px"
+				hooligan1.style.left = "0px"
+				snejok1.style.top = "0px"
+			}if (damage == 6){
+				hooligan2.style.top = "0px"
+				hooligan2.style.left = "0px"
+			}
+			if (damage == 6){
+				hooligan3.style.top = "0px"
+				hooligan3.style.left = "0px"
+			}
+			hooligan1.style.transition = "2s"
+			hooligan2.style.transition = "2s"
+			hooligan3.style.transition = "2s"
+	}
+    snejok5.onclick = function(){
+    		snejok5.style.transition = "1s"
+			snejok5.style.top = "350px";
+			snejok5.style.left = "680px";
+			damage = damage + 1;
+			if (damage == 6){
+				hooligan1.style.top = "0px"
+				hooligan1.style.left = "0px"
+			}if (damage == 6){
+				hooligan2.style.top = "0px"
+				hooligan2.style.left = "0px"
+			}
+			if (damage == 6){
+				hooligan3.style.top = "0px"
+				hooligan3.style.left = "0px"
+			}
+			hooligan1.style.transition = "2s"
+			hooligan2.style.transition = "2s"
+			hooligan3.style.transition = "2s"
+	}
+	snejok6.onclick = function(){
+			snejok6.style.transition = "1s"
+			snejok6.style.top = "250px";
+			snejok6.style.left = "950px";
+			damage = damage + 1;
+			if (damage == 6){
+				hooligan1.style.top = "0px"
+				hooligan1.style.left = "0px"
+			}if (damage == 6){
+				hooligan2.style.top = "0px"
+				hooligan2.style.left = "0px"
+			}
+			if (damage == 6){
+				hooligan3.style.top = "0px"
+				hooligan3.style.left = "0px"
+			}
+			hooligan1.style.transition = "2s"
+			hooligan2.style.transition = "2s"
+			hooligan3.style.transition = "2s"
+	}
+//фразы какие-нибудь будет говорить,пока игрок не возьмет снежки
+//снежки наверх уходят,я хочу чтобы они были внизу
+//после того как игрок попал в хулигана,у него должно отнять хп
+//
+</script>
+</body>
+</html>
+ 
+
